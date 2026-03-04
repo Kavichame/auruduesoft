@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasantha Udanaya 2026 - Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <a href="https://edu.dailymirror.lk/universities/about/27" target="_blank" rel="noopener noreferrer">
+                <img src="img/esoft.jpg" alt="ESOFT Logo" class="logo">
+            </a>
+            <p class="organizer">ESOFT Metro Campus Kurunegala Presents</p>
+            <h1 class="sinhala-title">ESOFT වසන්ත උදානය 2026 </h1>
+            
+            <div class="event-details">
+                <div class="detail-box">
+                    <span class="label">Date</span>
+                    <span class="value">April 4, 2026</span>
+                </div>
+                <div class="detail-box">
+                    <span class="label">Time</span>
+                    <span class="value">9.00 AM - 5.00 PM</span>
+                </div>
+            </div>
+            
+            <div class="location-box">
+                <span class="label">Location</span>
+                <span class="value">Sahira College Ground - Kurunegala</span>
+            </div>
+
+            <div id="countdown" class="countdown">Loading...</div>
+        </header>
+
+        <!-- Main Content Wrapper -->
+        <main class="form-wrapper">
+            
+            <!-- Tabs Navigation -->
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="ticket-section">
+                    🎟️ Buy Tickets
+                </button>
+                <button class="tab-btn" data-tab="contest-section">
+                    👑 Avurudu Kumara/Kumariya
+                </button>
+            </div>
+
+            <!-- SECTION 1: Ticket Registration -->
+            <div id="ticket-section" class="tab-content active">
+                <h2>Reserve Your Tickets</h2>
+                <form id="registrationForm">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" id="fullName" placeholder="e.g. Kasun Perera" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" id="email" placeholder="e.g. kasun@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone" placeholder="077 123 4567" required>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Ticket Type</label>
+                            <select id="ticketType">
+                                <option value="1500">Adult (LKR 1500)</option>
+                                <option value="800">Child (LKR 800)</option>
+                                <option value="5000">VIP Family (LKR 5000)</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>Quantity</label>
+                            <input type="number" id="quantity" min="1" max="10" value="1" required>
+                        </div>
+                    </div>
+                    <div class="total-cost">
+                        <span>Total Cost:</span>
+                        <span id="totalDisplay">LKR 1500</span>
+                    </div>
+                    <button type="submit" class="btn-submit">Register Now</button>
+                </form>
+            </div>
+
+            <!-- SECTION 2: Contest Registration (New) -->
+            <div id="contest-section" class="tab-content">
+                <h2 class="sinhala-title">අවුරුදු කුමරා / කුමරිය</h2>
+                <p class="contest-subtitle">Contest Registration</p>
+                
+                <form id="contestForm">
+                    <div class="input-group">
+                        <label>Contestant Name</label>
+                        <input type="text" id="cName" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Age</label>
+                            <input type="number" id="cAge" min="16" max="30" placeholder="18-30" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Category</label>
+                            <select id="cCategory">
+                                <option value="Kumara">Avurudu Kumara</option>
+                                <option value="Kumariya">Avurudu Kumariya</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>WhatsApp Number</label>
+                        <input type="tel" id="cPhone" placeholder="077 123 4567" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Upload Photo (Optional)</label>
+                        <input type="file" id="cPhoto" accept="image/*">
+                    </div>
+
+                    <button type="submit" class="btn-submit btn-contest">Submit Entry</button>
+                </form>
+            </div>
+
+        </main>
+
+        <!-- Success Modal -->
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3 id="modalTitle" class="sinhala-text">සුබ අලුත් අවුරුද්දක් වේවා! 🌻</h3>
+                <p id="modalMessage">Registration Successful!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 ESOFT Metro Campus Kurunegala</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

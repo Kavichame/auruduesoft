@@ -1,0 +1,103 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-header {
+    background: linear-gradient(90deg, #800000, #FF8C00);
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.admin-container {
+    padding: 20px 40px;
+}
+
+.data-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.data-section h2 {
+    margin: 0;
+    padding: 20px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+    font-size: 1.4rem;
+    color: #800000;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+thead {
+    background-color: #f9f9f9;
+}
+
+th {
+    font-weight: 600;
+    color: #555;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.contestant-photo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.contestant-photo:hover {
+    transform: scale(2.5);
+    z-index: 10;
+}
+
+.error {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.logout-btn {
+    margin-top: 15px;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid white;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.logout-btn:hover { background-color: rgba(255,255,255,0.4); }
